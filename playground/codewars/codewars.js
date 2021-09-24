@@ -1,14 +1,18 @@
 console.log ("connected and shit")
 
-function isIsogram(str){ 
-    const arr = str.toLowerCase().split("");
-    console.log (arr)
-    for (let i = 0; i < arr.length; i++){
-        for (let j = 0; j < arr[i].length; j++){
-            if ((i !== j) && (arr[i] === arr[j])){
-                return false
-            }
-        }
+const test1 = "is2 Thi1s T4est 3a"
+
+function order(words){
+    let arr = words.split(" "); //break string into individual words in arrays
+    let output = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        //find the number in the word at this indexOf
+        let num = arr[i].match(/\d+/);
+        //use that number to put this word at the right index
+        output[(num - 1)] = arr[i];
     }
-    return true
+    return output;
   }
+
+ console.log(order(test1))
