@@ -1,4 +1,6 @@
-const p = document.querySelectorAll('img')
-console.log(p)
+// const p = document.querySelectorAll('img')
+// console.log(p)
 
-const nice = document.querySelector('.nice');
+const pic = document.querySelector('.nice');
+pic.classList.toggle('round');
+console.log(pic.classList);
