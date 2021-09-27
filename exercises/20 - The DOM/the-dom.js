@@ -1,2 +1,4 @@
 const p = document.querySelectorAll('img')
-console.log(p) 
+console.log(p)
+
+const nice = document.querySelector('.nice');
