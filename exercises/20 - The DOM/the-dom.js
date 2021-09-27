@@ -12,3 +12,10 @@ function toggleRound() {
   }
   
   pic.addEventListener('click', toggleRound);
+
+  pic.alt = 'blue frenchie';
+  console.log(pic.naturalWidth);
+
+  pic.addEventListener("load", function(){
+      console.log(pic.naturalWidth);
+  })
